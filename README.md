@@ -15,7 +15,7 @@ The component accepts the props defined bellow in the table.
 ### Props accepted by IconWithTooltip
 
 | Name      | Type                              | Required | Default   | Description                        |
-| --------- | --------------------------------- | -------- | --------- | ---------------------------------- |
+|-----------|-----------------------------------|----------|-----------|------------------------------------|
 | Icon      | React.ComponentType<SvgIconProps> | yes      | -         | The icon (from @material-ui/icons) |
 | placement | TooltipPlacement                  | no       | bottom    | The placement of the tooltip text  |
 | text      | string                            | no       | undefined | The tooltip text                   |
@@ -25,7 +25,7 @@ The component accepts the props defined bellow in the table.
 ## Versions
 
 | IconWithTooltip _uses_ | Material-ui | Material-ui icons | React  |
-| ---------------------: | :---------: | :---------------: | :----: |
+|-----------------------:|:-----------:|:-----------------:|:------:|
 |                  1.0.x |    4.3.0    |       4.2.1       | 16.8.6 |
 
 ### About versioning schema used for IconWithTooltip
@@ -118,3 +118,7 @@ export default App;
 ### 1.0.0
 
 - icon-with-tooltip is made publicly available
+
+### 1.0.1
+
+- Fixed the types file

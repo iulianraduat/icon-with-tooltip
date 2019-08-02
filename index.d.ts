@@ -23,13 +23,18 @@ type TooltipPlacement =
 
 declare class IconWithTooltip extends React.Component<IconWithTooltipProps> {}
 
-declare class SuccessIconWithTooltip extends React.Component<IconWithTooltipProps> {}
+interface CustomIconWithTooltipProps {
+  placement?: TooltipPlacement;
+  text?: string;
+}
 
-declare class ErrorIconWithTooltip extends React.Component<IconWithTooltipProps> {}
+declare class SuccessIconWithTooltip extends React.Component<CustomIconWithTooltipProps> {}
 
-declare class InfoIconWithTooltip extends React.Component<IconWithTooltipProps> {}
+declare class ErrorIconWithTooltip extends React.Component<CustomIconWithTooltipProps> {}
+
+declare class InfoIconWithTooltip extends React.Component<CustomIconWithTooltipProps> {}
 
 declare module 'icon-with-tooltip' {}
 
 export default IconWithTooltip;
-export {SuccessIconWithTooltip, ErrorIconWithTooltip, InfoIconWithTooltip};
+export { SuccessIconWithTooltip, ErrorIconWithTooltip, InfoIconWithTooltip };
