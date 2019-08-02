@@ -122,3 +122,7 @@ export default App;
 ### 1.0.1
 
 - Fixed the types file
+
+### 1.0.2
+
+- Display the custom icons inline

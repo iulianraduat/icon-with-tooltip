@@ -4,7 +4,8 @@ import SuccessIcon from '@material-ui/icons/CheckCircle';
 import { TooltipPlacement } from './StyledTooltip';
 
 const style: React.CSSProperties = {
-  color: '#008000'
+  color: '#008000',
+  display: 'inline-block'
 };
 
 export const SuccessIconWithTooltip: React.FC<SuccessIconWithTooltipProps> = ({ placement, text }): JSX.Element => (

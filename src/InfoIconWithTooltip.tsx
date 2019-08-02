@@ -4,7 +4,8 @@ import InfoIcon from '@material-ui/icons/Info';
 import { TooltipPlacement } from './StyledTooltip';
 
 const style: React.CSSProperties = {
-  color: '#0040ff'
+  color: '#0040ff',
+  display: 'inline-block'
 };
 
 export const InfoIconWithTooltip: React.FC<InfoIconWithTooltipProps> = ({ placement, text }): JSX.Element => (
