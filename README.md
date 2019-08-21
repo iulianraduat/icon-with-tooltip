@@ -27,6 +27,7 @@ The component accepts the props defined bellow in the table.
 | IconWithTooltip _uses_ | Material-ui | Material-ui icons | React  |
 |-----------------------:|:-----------:|:-----------------:|:------:|
 |                  1.0.x |    4.3.0    |       4.2.1       | 16.8.6 |
+|                  1.1.x |    4.3.2    |       4.2.1       | 16.9.0 |
 
 ### About versioning schema used for IconWithTooltip
 
@@ -126,3 +127,7 @@ export default App;
 ### 1.0.2
 
 - Display the custom icons inline
+
+### 1.1.0
+
+- Update packages
