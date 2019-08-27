@@ -1,10 +1,10 @@
-import React from 'react';
-import IconWithTooltip from '../src/IconWithTooltip';
-import { storiesOf } from '@storybook/react';
 import CustomIcon from '@material-ui/icons/CardTravel';
-import { SuccessIconWithTooltip } from '../src/SuccessIconWithTooltip';
+import IconWithTooltip from '../src/IconWithTooltip';
+import React from 'react';
 import { ErrorIconWithTooltip } from '../src/ErrorIconWithTooltip';
 import { InfoIconWithTooltip } from '../src/InfoIconWithTooltip';
+import { storiesOf } from '@storybook/react';
+import { SuccessIconWithTooltip } from '../src/SuccessIconWithTooltip';
 
 const style: React.CSSProperties = {
   paddingTop: 40,
@@ -12,6 +12,7 @@ const style: React.CSSProperties = {
 };
 
 storiesOf('IconWithTooltip', module)
+  .addParameters({ options: { showPanel: false } })
   .add('with custom Icon and without text', () => (
     <div style={style}>
       <IconWithTooltip Icon={CustomIcon} />
