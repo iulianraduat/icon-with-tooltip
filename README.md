@@ -1,4 +1,4 @@
-# icon-with-tooltip
+# icon-with-tooltip ![Weekly downloads](https://img.shields.io/npm/dw/icon-with-tooltip "Weekly downloads")
 
 An icon displaying a tooltip on hover.
 
