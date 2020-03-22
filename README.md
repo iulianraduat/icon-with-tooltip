@@ -15,7 +15,7 @@ The component accepts the props defined bellow in the table.
 ### Props accepted by IconWithTooltip
 
 | Name      | Type                              | Required | Default   | Description                        |
-|-----------|-----------------------------------|----------|-----------|------------------------------------|
+| --------- | --------------------------------- | -------- | --------- | ---------------------------------- |
 | Icon      | React.ComponentType<SvgIconProps> | yes      | -         | The icon (from @material-ui/icons) |
 | placement | TooltipPlacement                  | no       | bottom    | The placement of the tooltip text  |
 | text      | string                            | no       | undefined | The tooltip text                   |
@@ -25,7 +25,7 @@ The component accepts the props defined bellow in the table.
 ## Versions
 
 | IconWithTooltip _uses_ | Material-ui | Material-ui icons | React  |
-|-----------------------:|:-----------:|:-----------------:|:------:|
+| ---------------------: | :---------: | :---------------: | :----: |
 |                  1.0.x |    4.3.0    |       4.2.1       | 16.8.6 |
 |                  1.1.x |    4.3.2    |       4.2.1       | 16.9.0 |
 |                  1.2.x |    4.9.0    |       4.5.1       | 16.9.0 |
@@ -43,15 +43,19 @@ The component accepts the props defined bellow in the table.
 Displaying an icon with a tooltip positioned above:
 
 ```js
-import * as React from 'react';
-import IconWithTooltip from 'icon-with-tooltip';
-import CustomIcon from '@material-ui/icons/CardTravel';
+import * as React from "react";
+import IconWithTooltip from "icon-with-tooltip";
+import CustomIcon from "@material-ui/icons/CardTravel";
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <IconWithTooltip Icon={CustomIcon} text="The content of the tooltip" placement="top"/>
+        <IconWithTooltip
+          Icon={CustomIcon}
+          text="The content of the tooltip"
+          placement="top"
+        />
       </div>
     );
   }
@@ -63,8 +67,8 @@ export default App;
 Using the predefined icons with tooltip components:
 
 ```js
-import * as React from 'react';
-import { SuccessIconWithTooltip } from 'icon-with-tooltip';
+import * as React from "react";
+import { SuccessIconWithTooltip } from "icon-with-tooltip";
 
 class App extends React.Component {
   render() {
@@ -80,8 +84,8 @@ export default App;
 ```
 
 ```js
-import * as React from 'react';
-import { ErrorIconWithTooltip } from 'icon-with-tooltip';
+import * as React from "react";
+import { ErrorIconWithTooltip } from "icon-with-tooltip";
 
 class App extends React.Component {
   render() {
@@ -97,8 +101,8 @@ export default App;
 ```
 
 ```js
-import * as React from 'react';
-import { InfoIconWithTooltip } from 'icon-with-tooltip';
+import * as React from "react";
+import { InfoIconWithTooltip } from "icon-with-tooltip";
 
 class App extends React.Component {
   render() {
@@ -136,3 +140,8 @@ export default App;
 ### 1.2.0
 
 - Update packages
+
+### 1.2.1
+
+- Updated packages
+- Moved from npm to yarn
