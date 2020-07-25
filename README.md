@@ -30,6 +30,7 @@ The component accepts the props defined bellow in the table.
 |                  1.1.x |    4.3.2    |       4.2.1       | 16.9.0 |
 |                  1.2.x |    4.9.0    |       4.5.1       | 16.9.0 |
 |                  1.3.x |   4.10.2    |       4.9.1       | 16.9.0 |
+|                  1.4.x |   4.11.0    |       4.9.1       | 16.9.0 |
 
 ### About versioning schema used for IconWithTooltip
 
@@ -146,3 +147,11 @@ export default App;
 
 - Updated packages
 - Moved from npm to yarn
+
+### 1.3.0
+
+- Update packages
+
+### 1.4.0
+
+- Update packages
