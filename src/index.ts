@@ -1,4 +1,4 @@
-export * from './IconWithTooltip';
-export * from './SuccessIconWithTooltip';
-export * from './ErrorIconWithTooltip';
-export * from './InfoIconWithTooltip';
+export { default } from "./IconWithTooltip";
+export { SuccessIconWithTooltip } from "./SuccessIconWithTooltip";
+export { ErrorIconWithTooltip } from "./ErrorIconWithTooltip";
+export { InfoIconWithTooltip } from "./InfoIconWithTooltip";
