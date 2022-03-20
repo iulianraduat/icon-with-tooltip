@@ -32,6 +32,7 @@ The component accepts the props defined bellow in the table.
 |                  1.3.x |   4.10.2    |       4.9.1       |      16.9.0      |
 |                  1.4.x |   4.11.0    |       4.9.1       |      16.9.0      |
 |                  1.5.x |   4.11.3    |      4.11.2       | 16.9.0 or 17.0.0 |
+|                  2.0.x |    5.5.1    |       5.5.1       |    >= 17.0.0     |
 
 ### About versioning schema used for IconWithTooltip
 
@@ -54,7 +55,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <IconWithTooltip Icon={CustomIcon} text="The content of the tooltip" placement="top" />
+        <IconWithTooltip
+          Icon={CustomIcon}
+          text="The content of the tooltip"
+          placement="top"
+        />
       </div>
     );
   }
@@ -164,3 +169,8 @@ export default App;
 ### 1.5.1
 
 - Fixed security warnings
+
+### 2.0.0
+
+- Migrated to material-ui 5
+- Supports minimum React 17

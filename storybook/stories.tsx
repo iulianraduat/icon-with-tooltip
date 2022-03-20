@@ -1,4 +1,4 @@
-import CustomIcon from '@material-ui/icons/CardTravel';
+import CustomIcon from '@mui/icons-material/CardTravel';
 import IconWithTooltip from '../src/IconWithTooltip';
 import React from 'react';
 import { ErrorIconWithTooltip } from '../src/ErrorIconWithTooltip';
@@ -8,7 +8,7 @@ import { SuccessIconWithTooltip } from '../src/SuccessIconWithTooltip';
 
 const style: React.CSSProperties = {
   paddingTop: 40,
-  textAlign: 'center'
+  textAlign: 'center',
 };
 
 storiesOf('IconWithTooltip', module)
@@ -25,8 +25,15 @@ storiesOf('IconWithTooltip', module)
   ))
   .add('with text in custom position (top)', () => (
     <div style={style}>
-      <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-      <IconWithTooltip Icon={CustomIcon} text="The content of the tooltip" placement="top" />
+      <p>
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+        consectetur, adipisci velit...
+      </p>
+      <IconWithTooltip
+        Icon={CustomIcon}
+        text="The content of the tooltip"
+        placement="top"
+      />
     </div>
   ))
   .add('with included success Icon', () => (
@@ -41,6 +48,6 @@ storiesOf('IconWithTooltip', module)
   ))
   .add('with included info Icon', () => (
     <div style={style}>
-      <InfoIconWithTooltip text="Info" placement="right" />
+      <InfoIconWithTooltip text="Info" placement="bottom-start" />
     </div>
   ));

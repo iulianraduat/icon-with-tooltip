@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SvgIconProps } from '@material-ui/core/SvgIcon';
+import { SvgIconProps } from '@mui/material/SvgIcon';
 
 export interface IconWithTooltipProps extends React.Props<any> {
   Icon: React.ComponentType<SvgIconProps>;
