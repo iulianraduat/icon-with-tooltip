@@ -33,6 +33,7 @@ The component accepts the props defined bellow in the table.
 |                  1.4.x |   4.11.0    |       4.9.1       |      16.9.0      |
 |                  1.5.x |   4.11.3    |      4.11.2       | 16.9.0 or 17.0.0 |
 |                  2.0.x |    5.5.1    |       5.5.1       |    >= 17.0.0     |
+|                  3.0.x |   5.10.17   |      5.10.16      |    >= 18.0.0     |
 
 ### About versioning schema used for IconWithTooltip
 
@@ -174,3 +175,7 @@ export default App;
 
 - Migrated to material-ui 5
 - Supports minimum React 17
+
+### 2.0.0
+
+- Supports minimum React 18

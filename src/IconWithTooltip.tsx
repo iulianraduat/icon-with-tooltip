@@ -21,7 +21,7 @@ const IconWithTooltip: React.FC<IconWithTooltipProps> = ({
   </div>
 );
 
-export interface IconWithTooltipProps extends React.Props<any> {
+export interface IconWithTooltipProps {
   Icon: React.ComponentType<SvgIconProps>;
   placement?: TooltipPlacement;
   text?: string;
