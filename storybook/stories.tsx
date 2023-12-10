@@ -1,9 +1,9 @@
 import CustomIcon from '@mui/icons-material/CardTravel';
-import IconWithTooltip from '../src/IconWithTooltip';
+import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import { ErrorIconWithTooltip } from '../src/ErrorIconWithTooltip';
+import IconWithTooltip from '../src/IconWithTooltip';
 import { InfoIconWithTooltip } from '../src/InfoIconWithTooltip';
-import { ComponentMeta, ComponentStory, storiesOf } from '@storybook/react';
 import { SuccessIconWithTooltip } from '../src/SuccessIconWithTooltip';
 
 const style: React.CSSProperties = {
@@ -11,30 +11,26 @@ const style: React.CSSProperties = {
   textAlign: 'center',
 };
 
-export default {
+const meta: Meta<typeof IconWithTooltip> = {
   title: 'IconWithTooltip',
   component: IconWithTooltip,
-} as ComponentMeta<typeof IconWithTooltip>;
+} as Meta<typeof IconWithTooltip>;
+export default meta;
+type Story = StoryObj<typeof IconWithTooltip>;
 
-export const WithCustomIconAndWithoutText: ComponentStory<
-  typeof IconWithTooltip
-> = () => (
+export const WithCustomIconAndWithoutText = () => (
   <div style={style}>
     <IconWithTooltip Icon={CustomIcon} />
   </div>
 );
 
-export const WithTextInDefaultBottomPosition: ComponentStory<
-  typeof IconWithTooltip
-> = () => (
+export const WithTextInDefaultBottomPosition = () => (
   <div style={style}>
     <IconWithTooltip Icon={CustomIcon} text="The content of the tooltip" />
   </div>
 );
 
-export const WithTextInCustomTopPosition: ComponentStory<
-  typeof IconWithTooltip
-> = () => (
+export const WithTextInCustomTopPosition = () => (
   <div style={style}>
     <p>
       Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
@@ -48,23 +44,20 @@ export const WithTextInCustomTopPosition: ComponentStory<
   </div>
 );
 
-export const WithIncludedSuccessIcon: ComponentStory<typeof IconWithTooltip> =
-  () => (
-    <div style={style}>
-      <SuccessIconWithTooltip text="Success" placement="left" />
-    </div>
-  );
+export const WithIncludedSuccessIcon = () => (
+  <div style={style}>
+    <SuccessIconWithTooltip text="Success" placement="left" />
+  </div>
+);
 
-export const WithIncludedErrorIcon: ComponentStory<typeof IconWithTooltip> =
-  () => (
-    <div style={style}>
-      <ErrorIconWithTooltip text="Error" placement="right" />
-    </div>
-  );
+export const WithIncludedErrorIcon = () => (
+  <div style={style}>
+    <ErrorIconWithTooltip text="Error" placement="right" />
+  </div>
+);
 
-export const WithIncludedInfoIcon: ComponentStory<typeof IconWithTooltip> =
-  () => (
-    <div style={style}>
-      <InfoIconWithTooltip text="Info" placement="bottom-start" />
-    </div>
-  );
+export const WithIncludedInfoIcon = () => (
+  <div style={style}>
+    <InfoIconWithTooltip text="Info" placement="bottom-start" />
+  </div>
+);
